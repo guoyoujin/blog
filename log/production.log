@@ -1,0 +1,10 @@
+D, [2015-07-22T11:56:47.638462 #12662] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (24.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2015-07-22T11:57:10.520014 #12674] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+D, [2015-07-22T11:57:10.656217 #12674] DEBUG -- :   [1m[35m (0.1ms)[0m  BEGIN
+D, [2015-07-22T11:57:10.685312 #12674] DEBUG -- :   [1m[36mUser Exists (12.8ms)[0m  [1mSELECT  1 AS one FROM `users`  WHERE `users`.`username` = BINARY 'guoyoujin' LIMIT 1[0m
+D, [2015-07-22T11:57:10.692389 #12674] DEBUG -- :   [1m[35mUser Exists (6.0ms)[0m  SELECT  1 AS one FROM `users`  WHERE `users`.`email` = BINARY '1132576362@qq.com' LIMIT 1
+D, [2015-07-22T11:57:10.696015 #12674] DEBUG -- :   [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `users` (`activation`, `admin`, `created_at`, `email`, `password_digest`, `updated_at`, `username`) VALUES (1, 1, '2015-07-22 11:57:10', '1132576362@qq.com', '$2a$10$Y4VOuud/de/UUSBgT9ckie7WWsLT9FcIozB8q3HeNYr3.iog9dbe2', '2015-07-22 11:57:10', 'guoyoujin')[0m
+D, [2015-07-22T11:57:10.697951 #12674] DEBUG -- :   [1m[35m (1.0ms)[0m  COMMIT
+D, [2015-07-22T11:57:10.709784 #12674] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2015-07-22T11:57:10.713166 #12674] DEBUG -- :   [1m[35mSQL (1.1ms)[0m  INSERT INTO `categories` (`created_at`, `name`, `updated_at`) VALUES ('2015-07-22 11:57:10', '默认分类', '2015-07-22 11:57:10')
+D, [2015-07-22T11:57:10.714497 #12674] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mCOMMIT[0m

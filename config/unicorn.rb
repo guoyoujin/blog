@@ -1,5 +1,5 @@
 # path to app dir
-app_dir = "/project/blog/"
+app_dir = "/Users/guoyoujin/Documents/rails/blogs"
 worker_processes 2
 working_directory app_dir
 

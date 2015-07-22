@@ -345,3 +345,1174 @@ Processing by UsersController#login as HTML
   Rendered users/login.html.haml within layouts/register (2.8ms)
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
 Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 11:48:53 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (6.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BlogsController#index as HTML
+  [1m[35mArticle Load (7.1ms)[0m  SELECT  `articles`.* FROM `articles`   ORDER BY updated_at desc LIMIT 10
+  Rendered articles/_article.html.haml (4.1ms)
+  Rendered articles/_articles.html.haml (42.8ms)
+  [1m[36mArticleComment Load (0.4ms)[0m  [1mSELECT  `article_comments`.* FROM `article_comments`   ORDER BY updated_at desc LIMIT 10[0m
+  [1m[35mUser Load (6.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1
+  Rendered blogs/index.html.haml within layouts/application (119.0ms)
+  [1m[36mBlogInfo Load (0.3ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+  Rendered layouts/_footer.html.haml (0.9ms)
+Completed 200 OK in 326ms (Views: 205.5ms | ActiveRecord: 97.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-07-22 11:48:58 +0800
+Processing by UsersController#login as HTML
+Redirected to http://localhost:3000/login?from=http%3A%2F%2Flocalhost%3A3000%2F
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login?from=http%3A%2F%2Flocalhost%3A3000%2F" for 127.0.0.1 at 2015-07-22 11:48:58 +0800
+Processing by UsersController#login as HTML
+  Parameters: {"from"=>"http://localhost:3000/"}
+  [1m[36mBlogInfo Load (0.2ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  Rendered users/login.html.haml within layouts/register (12.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login?from=http%3A%2F%2Flocalhost%3A3000%2F" for 127.0.0.1 at 2015-07-22 11:49:17 +0800
+Processing by UsersController#login as HTML
+  Parameters: {"from"=>"http://localhost:3000/"}
+  [1m[36mBlogInfo Load (0.2ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  Rendered users/login.html.haml within layouts/register (6.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/register-e049ee2c6963591bfedb8d8af3b9d850.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:17 +0800
+
+
+Started GET "/assets/application-0535decb64f78c02763d44c5f90f48bb.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:17 +0800
+
+
+Started GET "/assets/bootstrap-2e180098533dbe5fdde4aab8c66f0e99.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:17 +0800
+
+
+Started GET "/assets/_font-awesome-8f2465de0a03810e5decaf337f5d1d9b.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:17 +0800
+
+
+Started GET "/assets/_font-awesome-ie7.min-7d65616da7f152f8b3f04557f720663f.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:17 +0800
+
+
+Started GET "/assets/markdown-toolbar-cc2f6af3e8a2ee56384ee69ddf51cbae.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:17 +0800
+
+
+Started GET "/assets/social-share-button-bd401a1a01d7e4dc8e110401763bb602.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/jquery-f16c5eea49b647ff53c288cd87d6dae7.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/jquery_ujs-8de61fa6c07035279699eb5b802f1ff1.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/turbolinks-8a34881c9ccef628d78db711d53243ef.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/bootstrap-1141a0a374e64b322c481cbc699c0247.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/twitter/bootstrap/rails/confirm-42dbe3e9ddcddc162c31b4e8867ebafd.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/html5shiv.min-b888d48bedefe319da93481204a267e1.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/respond.min-321aa71d6d0a63b1674fd68e544169a9.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/jquery-fieldselection-f0c6290cdd048f0064e0a31e209e5de2.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/markdown-toolbar-core-65259cf09b1ece87e4151056be3b1e0a.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/markdown-toolbar-buttons-b24be2c592e0767f36e3b9c9e58cec2a.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/markdown-toolbar-e70ee5acd347287bbdd8743f11fcee7d.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/jquery.iframe-transport-56776a102c31c0e261bec3805458edef.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/jquery.remotipart-5d3a815ff61e8f3a3e3157168915f700.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/social-share-button-06d83564c956cf9483cf82b42afafb4e.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started GET "/assets/application-a09f0711b117d020924021666e321575.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:18 +0800
+
+
+Started POST "/users/login_confirm?from=http%3A%2F%2Flocalhost%3A3000%2F" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+Processing by UsersController#login_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bIJaPFp8rntPVGII2iXPHjjTC/qTwCotX/OhikEPeMU=", "user"=>{"username"=>"15279058466", "password"=>"[FILTERED]"}, "commit"=>"登录", "from"=>"http://localhost:3000/"}
+  [1m[36mUser Load (36.6ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`username` = '15279058466' LIMIT 1[0m
+  [1m[35mBlogInfo Load (0.3ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+  Rendered users/login.html.haml within layouts/register (2.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 63ms (Views: 17.8ms | ActiveRecord: 36.9ms)
+
+
+Started GET "/assets/register-e049ee2c6963591bfedb8d8af3b9d850.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/application-0535decb64f78c02763d44c5f90f48bb.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/bootstrap-2e180098533dbe5fdde4aab8c66f0e99.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/_font-awesome-8f2465de0a03810e5decaf337f5d1d9b.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/_font-awesome-ie7.min-7d65616da7f152f8b3f04557f720663f.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/markdown-toolbar-cc2f6af3e8a2ee56384ee69ddf51cbae.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/social-share-button-bd401a1a01d7e4dc8e110401763bb602.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/jquery-f16c5eea49b647ff53c288cd87d6dae7.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/jquery_ujs-8de61fa6c07035279699eb5b802f1ff1.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/turbolinks-8a34881c9ccef628d78db711d53243ef.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/bootstrap-1141a0a374e64b322c481cbc699c0247.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/twitter/bootstrap/rails/confirm-42dbe3e9ddcddc162c31b4e8867ebafd.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/html5shiv.min-b888d48bedefe319da93481204a267e1.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/respond.min-321aa71d6d0a63b1674fd68e544169a9.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/jquery-fieldselection-f0c6290cdd048f0064e0a31e209e5de2.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/markdown-toolbar-core-65259cf09b1ece87e4151056be3b1e0a.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/markdown-toolbar-buttons-b24be2c592e0767f36e3b9c9e58cec2a.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/markdown-toolbar-e70ee5acd347287bbdd8743f11fcee7d.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/jquery.iframe-transport-56776a102c31c0e261bec3805458edef.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/jquery.remotipart-5d3a815ff61e8f3a3e3157168915f700.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/social-share-button-06d83564c956cf9483cf82b42afafb4e.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started GET "/assets/application-a09f0711b117d020924021666e321575.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:23 +0800
+
+
+Started POST "/users/login_confirm?from=http%3A%2F%2Flocalhost%3A3000%2F" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+Processing by UsersController#login_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bIJaPFp8rntPVGII2iXPHjjTC/qTwCotX/OhikEPeMU=", "user"=>{"username"=>"guoyoujin", "password"=>"[FILTERED]"}, "commit"=>"登录", "from"=>"http://localhost:3000/"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`username` = 'guoyoujin' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (25.5ms)[0m  UPDATE `users` SET `last_login_time` = '2015-07-22 11:49:26', `updated_at` = '2015-07-22 11:49:26' WHERE `users`.`id` = 1
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 103ms (ActiveRecord: 27.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+Processing by BlogsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`   ORDER BY updated_at desc LIMIT 10[0m
+  Rendered articles/_article.html.haml (0.5ms)
+  Rendered articles/_articles.html.haml (2.4ms)
+  [1m[35mArticleComment Load (0.2ms)[0m  SELECT  `article_comments`.* FROM `article_comments`   ORDER BY updated_at desc LIMIT 10
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered blogs/index.html.haml within layouts/application (5.3ms)
+  [1m[35mBlogInfo Load (0.3ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/register-e049ee2c6963591bfedb8d8af3b9d850.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/application-0535decb64f78c02763d44c5f90f48bb.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/bootstrap-2e180098533dbe5fdde4aab8c66f0e99.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/_font-awesome-8f2465de0a03810e5decaf337f5d1d9b.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/_font-awesome-ie7.min-7d65616da7f152f8b3f04557f720663f.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/markdown-toolbar-cc2f6af3e8a2ee56384ee69ddf51cbae.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/social-share-button-bd401a1a01d7e4dc8e110401763bb602.css?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/jquery-f16c5eea49b647ff53c288cd87d6dae7.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/jquery_ujs-8de61fa6c07035279699eb5b802f1ff1.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/turbolinks-8a34881c9ccef628d78db711d53243ef.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/bootstrap-1141a0a374e64b322c481cbc699c0247.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/twitter/bootstrap/rails/confirm-42dbe3e9ddcddc162c31b4e8867ebafd.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/html5shiv.min-b888d48bedefe319da93481204a267e1.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/respond.min-321aa71d6d0a63b1674fd68e544169a9.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/jquery-fieldselection-f0c6290cdd048f0064e0a31e209e5de2.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/markdown-toolbar-core-65259cf09b1ece87e4151056be3b1e0a.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/markdown-toolbar-buttons-b24be2c592e0767f36e3b9c9e58cec2a.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/markdown-toolbar-e70ee5acd347287bbdd8743f11fcee7d.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/jquery.iframe-transport-56776a102c31c0e261bec3805458edef.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/jquery.remotipart-5d3a815ff61e8f3a3e3157168915f700.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/social-share-button-06d83564c956cf9483cf82b42afafb4e.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/assets/application-a09f0711b117d020924021666e321575.js?body=1" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+
+Started GET "/images/604886d1-50de-47e3-a893-c9a3961be66c.png" for 127.0.0.1 at 2015-07-22 11:49:26 +0800
+
+ActionController::RoutingError (No route matches [GET] "/images/604886d1-50de-47e3-a893-c9a3961be66c.png"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-07-22 11:49:31 +0800
+Processing by UsersController#logout as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 11:49:31 +0800
+Processing by BlogsController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`   ORDER BY updated_at desc LIMIT 10[0m
+  Rendered articles/_article.html.haml (3.7ms)
+  Rendered articles/_articles.html.haml (7.4ms)
+  [1m[35mArticleComment Load (0.3ms)[0m  SELECT  `article_comments`.* FROM `article_comments`   ORDER BY updated_at desc LIMIT 10
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered blogs/index.html.haml within layouts/application (12.3ms)
+  [1m[35mBlogInfo Load (0.2ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  Rendered layouts/_footer.html.haml (0.8ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2015-07-22 11:49:32 +0800
+Processing by UsersController#register as HTML
+  [1m[35mBlogInfo Load (0.2ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+  Rendered users/_form.html.haml (3.7ms)
+  Rendered users/register.html.haml within layouts/register (8.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/register_confirm" for 127.0.0.1 at 2015-07-22 11:49:38 +0800
+Processing by UsersController#register_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bIJaPFp8rntPVGII2iXPHjjTC/qTwCotX/OhikEPeMU=", "user"=>{"username"=>"11", "email"=>"11", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 83ms
+
+NoMethodError (undefined method `worker_processes' for #<I18n::Backend::Simple:0x007f9e9b760480>):
+  config/locales/unicorn.rb:3:in `load_rb'
+  app/controllers/users_controller.rb:10:in `register_confirm'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.7ms)
+
+
+Started POST "/users/register_confirm" for 127.0.0.1 at 2015-07-22 11:49:52 +0800
+Processing by UsersController#register_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bIJaPFp8rntPVGII2iXPHjjTC/qTwCotX/OhikEPeMU=", "user"=>{"username"=>"11", "email"=>"1111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 77ms
+
+NoMethodError (undefined method `worker_processes' for #<I18n::Backend::Simple:0x007f9e9b760480>):
+  config/locales/unicorn.rb:3:in `load_rb'
+  app/controllers/users_controller.rb:10:in `register_confirm'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.0ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.5ms)
+
+
+Started POST "/users/register_confirm" for 127.0.0.1 at 2015-07-22 11:50:25 +0800
+Processing by UsersController#register_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bIJaPFp8rntPVGII2iXPHjjTC/qTwCotX/OhikEPeMU=", "user"=>{"username"=>"gyj", "email"=>"1132576362@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 77ms
+
+NoMethodError (undefined method `worker_processes' for #<I18n::Backend::Simple:0x007f9e9b760480>):
+  config/locales/unicorn.rb:3:in `load_rb'
+  app/controllers/users_controller.rb:10:in `register_confirm'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 11:51:49 +0800
+Processing by BlogsController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`   ORDER BY updated_at desc LIMIT 10
+  Rendered articles/_article.html.haml (0.8ms)
+  Rendered articles/_articles.html.haml (4.4ms)
+  [1m[36mArticleComment Load (0.4ms)[0m  [1mSELECT  `article_comments`.* FROM `article_comments`   ORDER BY updated_at desc LIMIT 10[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1
+  Rendered blogs/index.html.haml within layouts/application (9.0ms)
+  [1m[36mBlogInfo Load (0.3ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+  Rendered layouts/_footer.html.haml (0.1ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-07-22 11:51:51 +0800
+Processing by UsersController#login as HTML
+Redirected to http://localhost:3000/login?from=http%3A%2F%2Flocalhost%3A3000%2F
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login?from=http%3A%2F%2Flocalhost%3A3000%2F" for 127.0.0.1 at 2015-07-22 11:51:51 +0800
+Processing by UsersController#login as HTML
+  Parameters: {"from"=>"http://localhost:3000/"}
+  [1m[36mBlogInfo Load (0.2ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  Rendered users/login.html.haml within layouts/register (2.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2015-07-22 11:54:20 +0800
+Processing by UsersController#register as HTML
+  [1m[36mBlogInfo Load (0.2ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered users/register.html.haml within layouts/register (4.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/register_confirm" for 127.0.0.1 at 2015-07-22 11:54:27 +0800
+Processing by UsersController#register_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bIJaPFp8rntPVGII2iXPHjjTC/qTwCotX/OhikEPeMU=", "user"=>{"username"=>"q", "email"=>"11", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 79ms
+
+NoMethodError (undefined method `worker_processes' for #<I18n::Backend::Simple:0x007f9e9b760480>):
+  config/locales/unicorn.rb:3:in `load_rb'
+  app/controllers/users_controller.rb:10:in `register_confirm'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.4ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2015-07-22 11:57:54 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UsersController#register as HTML
+  [1m[35mBlogInfo Load (0.3ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+  Rendered users/_form.html.haml (13.3ms)
+  Rendered users/register.html.haml within layouts/register (57.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 214ms (Views: 159.4ms | ActiveRecord: 39.4ms)
+
+
+Started GET "/assets/bootstrap-2e180098533dbe5fdde4aab8c66f0e99.css?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/social-share-button-bd401a1a01d7e4dc8e110401763bb602.css?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/markdown-toolbar-cc2f6af3e8a2ee56384ee69ddf51cbae.css?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/_font-awesome-8f2465de0a03810e5decaf337f5d1d9b.css?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/_font-awesome-ie7.min-7d65616da7f152f8b3f04557f720663f.css?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/jquery-f16c5eea49b647ff53c288cd87d6dae7.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/twitter/bootstrap/rails/confirm-42dbe3e9ddcddc162c31b4e8867ebafd.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/jquery-fieldselection-f0c6290cdd048f0064e0a31e209e5de2.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/jquery_ujs-8de61fa6c07035279699eb5b802f1ff1.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/turbolinks-8a34881c9ccef628d78db711d53243ef.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/bootstrap-1141a0a374e64b322c481cbc699c0247.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/markdown-toolbar-core-65259cf09b1ece87e4151056be3b1e0a.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/markdown-toolbar-buttons-b24be2c592e0767f36e3b9c9e58cec2a.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/markdown-toolbar-e70ee5acd347287bbdd8743f11fcee7d.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/jquery.iframe-transport-56776a102c31c0e261bec3805458edef.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/jquery.remotipart-5d3a815ff61e8f3a3e3157168915f700.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started GET "/assets/social-share-button-06d83564c956cf9483cf82b42afafb4e.js?body=1" for 127.0.0.1 at 2015-07-22 11:57:55 +0800
+
+
+Started POST "/users/register_confirm" for 127.0.0.1 at 2015-07-22 11:58:01 +0800
+Processing by UsersController#register_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bIJaPFp8rntPVGII2iXPHjjTC/qTwCotX/OhikEPeMU=", "user"=>{"username"=>"111", "email"=>"111", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 77ms
+
+NoMethodError (undefined method `worker_processes' for #<I18n::Backend::Simple:0x007fde32cc4418>):
+  config/locales/unicorn.rb:3:in `load_rb'
+  app/controllers/users_controller.rb:10:in `register_confirm'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (54.1ms)
+
+
+Started GET "/users/login_confirm?from=%2F" for 127.0.0.1 at 2015-07-22 13:31:05 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  remotipart (1.2.1) lib/remotipart/middleware.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.9ms)
+
+
+Started GET "/assets/register-e049ee2c6963591bfedb8d8af3b9d850.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/application-0535decb64f78c02763d44c5f90f48bb.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/bootstrap-2e180098533dbe5fdde4aab8c66f0e99.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/_font-awesome-8f2465de0a03810e5decaf337f5d1d9b.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/_font-awesome-ie7.min-7d65616da7f152f8b3f04557f720663f.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/markdown-toolbar-cc2f6af3e8a2ee56384ee69ddf51cbae.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/social-share-button-bd401a1a01d7e4dc8e110401763bb602.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/jquery-f16c5eea49b647ff53c288cd87d6dae7.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/jquery_ujs-8de61fa6c07035279699eb5b802f1ff1.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/turbolinks-8a34881c9ccef628d78db711d53243ef.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/bootstrap-1141a0a374e64b322c481cbc699c0247.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/twitter/bootstrap/rails/confirm-42dbe3e9ddcddc162c31b4e8867ebafd.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/html5shiv.min-b888d48bedefe319da93481204a267e1.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/respond.min-321aa71d6d0a63b1674fd68e544169a9.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/jquery-fieldselection-f0c6290cdd048f0064e0a31e209e5de2.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/markdown-toolbar-core-65259cf09b1ece87e4151056be3b1e0a.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/markdown-toolbar-buttons-b24be2c592e0767f36e3b9c9e58cec2a.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/markdown-toolbar-e70ee5acd347287bbdd8743f11fcee7d.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/jquery.iframe-transport-56776a102c31c0e261bec3805458edef.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/jquery.remotipart-5d3a815ff61e8f3a3e3157168915f700.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/social-share-button-06d83564c956cf9483cf82b42afafb4e.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/application-a09f0711b117d020924021666e321575.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:08 +0800
+
+
+Started GET "/assets/register-e049ee2c6963591bfedb8d8af3b9d850.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:09 +0800
+
+
+Started GET "/assets/application-0535decb64f78c02763d44c5f90f48bb.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:09 +0800
+
+
+Started GET "/assets/bootstrap-2e180098533dbe5fdde4aab8c66f0e99.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:09 +0800
+
+
+Started GET "/assets/_font-awesome-8f2465de0a03810e5decaf337f5d1d9b.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:09 +0800
+
+
+Started GET "/assets/_font-awesome-ie7.min-7d65616da7f152f8b3f04557f720663f.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:09 +0800
+
+
+Started GET "/assets/markdown-toolbar-cc2f6af3e8a2ee56384ee69ddf51cbae.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:09 +0800
+
+
+Started GET "/assets/social-share-button-bd401a1a01d7e4dc8e110401763bb602.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/jquery-f16c5eea49b647ff53c288cd87d6dae7.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/jquery_ujs-8de61fa6c07035279699eb5b802f1ff1.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/turbolinks-8a34881c9ccef628d78db711d53243ef.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/bootstrap-1141a0a374e64b322c481cbc699c0247.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/twitter/bootstrap/rails/confirm-42dbe3e9ddcddc162c31b4e8867ebafd.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/html5shiv.min-b888d48bedefe319da93481204a267e1.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/respond.min-321aa71d6d0a63b1674fd68e544169a9.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/jquery-fieldselection-f0c6290cdd048f0064e0a31e209e5de2.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/markdown-toolbar-core-65259cf09b1ece87e4151056be3b1e0a.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/markdown-toolbar-buttons-b24be2c592e0767f36e3b9c9e58cec2a.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/markdown-toolbar-e70ee5acd347287bbdd8743f11fcee7d.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/jquery.iframe-transport-56776a102c31c0e261bec3805458edef.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/jquery.remotipart-5d3a815ff61e8f3a3e3157168915f700.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/social-share-button-06d83564c956cf9483cf82b42afafb4e.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/assets/application-a09f0711b117d020924021666e321575.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+
+Started GET "/users/login_confirm?from=%2F" for 127.0.0.1 at 2015-07-22 13:31:10 +0800
+
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  remotipart (1.2.1) lib/remotipart/middleware.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.7) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.5) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.5) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.5) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-22 13:31:13 +0800
+Processing by BlogsController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`   ORDER BY updated_at desc LIMIT 10
+  Rendered articles/_article.html.haml (3.9ms)
+  Rendered articles/_articles.html.haml (35.4ms)
+  [1m[36mArticleComment Load (0.3ms)[0m  [1mSELECT  `article_comments`.* FROM `article_comments`   ORDER BY updated_at desc LIMIT 10[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1
+  Rendered blogs/index.html.haml within layouts/application (102.1ms)
+Completed 500 Internal Server Error in 140ms
+
+ActionView::Template::Error (undefined method `nickname' for nil:NilClass):
+     8:       %ul.list-group.new_comments
+     9:         - @new_comments.each do |comment|
+    10:           %li.text-left
+    11:             = link_to "#{comment.user.nickname}: #{comment.content[0..18]}...", article_path(comment.article_id) + "#comment_#{comment.id}", target: '_blank', class: 'list-group-item'
+  app/views/blogs/index.html.haml:11:in `block in _app_views_blogs_index_html_haml___676215114603970200_70336313105720'
+  app/views/blogs/index.html.haml:9:in `_app_views_blogs_index_html_haml___676215114603970200_70336313105720'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+Processing by UsersController#login as HTML
+Redirected to http://localhost:3000/login?from=%2F
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login?from=%2F" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+Processing by UsersController#login as HTML
+  Parameters: {"from"=>"/"}
+  [1m[36mBlogInfo Load (0.2ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  Rendered users/login.html.haml within layouts/register (39.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+Completed 200 OK in 182ms (Views: 161.5ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+Processing by UsersController#login as HTML
+Redirected to http://localhost:3000/login?from=%2F
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login?from=%2F" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+Processing by UsersController#login as HTML
+  Parameters: {"from"=>"/"}
+  [1m[36mBlogInfo Load (0.2ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  Rendered users/login.html.haml within layouts/register (2.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-2e180098533dbe5fdde4aab8c66f0e99.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/_font-awesome-8f2465de0a03810e5decaf337f5d1d9b.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/_font-awesome-ie7.min-7d65616da7f152f8b3f04557f720663f.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/markdown-toolbar-cc2f6af3e8a2ee56384ee69ddf51cbae.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/social-share-button-bd401a1a01d7e4dc8e110401763bb602.css?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/jquery-f16c5eea49b647ff53c288cd87d6dae7.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/jquery_ujs-8de61fa6c07035279699eb5b802f1ff1.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/turbolinks-8a34881c9ccef628d78db711d53243ef.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/bootstrap-1141a0a374e64b322c481cbc699c0247.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/twitter/bootstrap/rails/confirm-42dbe3e9ddcddc162c31b4e8867ebafd.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/jquery-fieldselection-f0c6290cdd048f0064e0a31e209e5de2.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/markdown-toolbar-core-65259cf09b1ece87e4151056be3b1e0a.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/markdown-toolbar-buttons-b24be2c592e0767f36e3b9c9e58cec2a.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/markdown-toolbar-e70ee5acd347287bbdd8743f11fcee7d.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/jquery.iframe-transport-56776a102c31c0e261bec3805458edef.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/jquery.remotipart-5d3a815ff61e8f3a3e3157168915f700.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/assets/social-share-button-06d83564c956cf9483cf82b42afafb4e.js?body=1" for 127.0.0.1 at 2015-07-22 13:31:20 +0800
+
+
+Started GET "/register" for 127.0.0.1 at 2015-07-22 13:31:24 +0800
+Processing by UsersController#register as HTML
+  [1m[36mBlogInfo Load (0.2ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  Rendered users/_form.html.haml (3.2ms)
+  Rendered users/register.html.haml within layouts/register (8.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/register_confirm" for 127.0.0.1 at 2015-07-22 13:31:36 +0800
+Processing by UsersController#register_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Es34Uq0uaHoP+CwxZMacsy391TE/lVbfA/jxPsuv3U0=", "user"=>{"username"=>"1111111", "email"=>"1132576362@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM `users`  WHERE `users`.`username` = BINARY '1111111' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `users`  WHERE `users`.`email` = BINARY '1132576362@qq.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 98ms
+
+NoMethodError (undefined method `worker_processes' for #<I18n::Backend::Simple:0x007ff0e2fadfe0>):
+  config/locales/unicorn.rb:3:in `load_rb'
+  app/controllers/users_controller.rb:10:in `register_confirm'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.8ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+Processing by UsersController#register as HTML
+  [1m[36mBlogInfo Load (0.2ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  Rendered users/_form.html.haml (3.3ms)
+  Rendered users/register.html.haml within layouts/register (7.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-2e180098533dbe5fdde4aab8c66f0e99.css?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/_font-awesome-8f2465de0a03810e5decaf337f5d1d9b.css?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/_font-awesome-ie7.min-7d65616da7f152f8b3f04557f720663f.css?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/markdown-toolbar-cc2f6af3e8a2ee56384ee69ddf51cbae.css?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/social-share-button-bd401a1a01d7e4dc8e110401763bb602.css?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/jquery-f16c5eea49b647ff53c288cd87d6dae7.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/jquery_ujs-8de61fa6c07035279699eb5b802f1ff1.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/turbolinks-8a34881c9ccef628d78db711d53243ef.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/bootstrap-1141a0a374e64b322c481cbc699c0247.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/twitter/bootstrap/rails/confirm-42dbe3e9ddcddc162c31b4e8867ebafd.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/jquery-fieldselection-f0c6290cdd048f0064e0a31e209e5de2.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/markdown-toolbar-core-65259cf09b1ece87e4151056be3b1e0a.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/markdown-toolbar-buttons-b24be2c592e0767f36e3b9c9e58cec2a.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/markdown-toolbar-e70ee5acd347287bbdd8743f11fcee7d.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/jquery.iframe-transport-56776a102c31c0e261bec3805458edef.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/jquery.remotipart-5d3a815ff61e8f3a3e3157168915f700.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started GET "/assets/social-share-button-06d83564c956cf9483cf82b42afafb4e.js?body=1" for 127.0.0.1 at 2015-07-22 13:34:04 +0800
+
+
+Started POST "/users/register_confirm" for 127.0.0.1 at 2015-07-22 13:34:17 +0800
+Processing by UsersController#register_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Es34Uq0uaHoP+CwxZMacsy391TE/lVbfA/jxPsuv3U0=", "user"=>{"username"=>"11111212", "email"=>"1132576362@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT  1 AS one FROM `users`  WHERE `users`.`username` = BINARY '11111212' LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `users`  WHERE `users`.`email` = BINARY '1132576362@qq.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 79ms
+
+NoMethodError (undefined method `worker_processes' for #<I18n::Backend::Simple:0x007ff0e2fadfe0>):
+  config/locales/unicorn.rb:3:in `load_rb'
+  app/controllers/users_controller.rb:10:in `register_confirm'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.7ms)
+
+
+Started POST "/users/register_confirm" for 127.0.0.1 at 2015-07-22 13:35:46 +0800
+Processing by UsersController#register_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Es34Uq0uaHoP+CwxZMacsy391TE/lVbfA/jxPsuv3U0=", "user"=>{"username"=>"11111212", "email"=>"1132576362@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM `users`  WHERE `users`.`username` = BINARY '11111212' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `users`  WHERE `users`.`email` = BINARY '1132576362@qq.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 91ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/guoyoujin/Documents/rails/blogs/config/locales/unicorn.rb):
+  app/controllers/users_controller.rb:10:in `register_confirm'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.5ms)
+
+
+Started POST "/users/register_confirm" for 127.0.0.1 at 2015-07-22 13:35:52 +0800
+Processing by UsersController#register_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Es34Uq0uaHoP+CwxZMacsy391TE/lVbfA/jxPsuv3U0=", "user"=>{"username"=>"11111212", "email"=>"1132576362@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM `users`  WHERE `users`.`username` = BINARY '11111212' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `users`  WHERE `users`.`email` = BINARY '1132576362@qq.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 78ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/guoyoujin/Documents/rails/blogs/config/locales/unicorn.rb):
+  app/controllers/users_controller.rb:10:in `register_confirm'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.3ms)
+
+
+Started POST "/users/register_confirm" for 127.0.0.1 at 2015-07-22 13:37:35 +0800
+Processing by UsersController#register_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Es34Uq0uaHoP+CwxZMacsy391TE/lVbfA/jxPsuv3U0=", "user"=>{"username"=>"11111212", "email"=>"1132576362@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM `users`  WHERE `users`.`username` = BINARY '11111212' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `users`  WHERE `users`.`email` = BINARY '1132576362@qq.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 77ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/guoyoujin/Documents/rails/blogs/config/locales/unicorn.rb):
+  app/controllers/users_controller.rb:10:in `register_confirm'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.9ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+Processing by UsersController#register as HTML
+  [1m[36mBlogInfo Load (0.2ms)[0m  [1mSELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1[0m
+  Rendered users/_form.html.haml (1.4ms)
+  Rendered users/register.html.haml within layouts/register (11.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `blog_info`.* FROM `blog_info`   ORDER BY `blog_info`.`id` ASC LIMIT 1
+Completed 200 OK in 32ms (Views: 28.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/bootstrap-2e180098533dbe5fdde4aab8c66f0e99.css?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/_font-awesome-8f2465de0a03810e5decaf337f5d1d9b.css?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/_font-awesome-ie7.min-7d65616da7f152f8b3f04557f720663f.css?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/markdown-toolbar-cc2f6af3e8a2ee56384ee69ddf51cbae.css?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/social-share-button-bd401a1a01d7e4dc8e110401763bb602.css?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/jquery-f16c5eea49b647ff53c288cd87d6dae7.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/jquery_ujs-8de61fa6c07035279699eb5b802f1ff1.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/turbolinks-8a34881c9ccef628d78db711d53243ef.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/bootstrap-1141a0a374e64b322c481cbc699c0247.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/rails/confirm-42dbe3e9ddcddc162c31b4e8867ebafd.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/jquery-fieldselection-f0c6290cdd048f0064e0a31e209e5de2.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/markdown-toolbar-core-65259cf09b1ece87e4151056be3b1e0a.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/markdown-toolbar-buttons-b24be2c592e0767f36e3b9c9e58cec2a.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/markdown-toolbar-e70ee5acd347287bbdd8743f11fcee7d.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/jquery.iframe-transport-56776a102c31c0e261bec3805458edef.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/jquery.remotipart-5d3a815ff61e8f3a3e3157168915f700.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started GET "/assets/social-share-button-06d83564c956cf9483cf82b42afafb4e.js?body=1" for 127.0.0.1 at 2015-07-22 13:37:37 +0800
+
+
+Started POST "/users/register_confirm" for 127.0.0.1 at 2015-07-22 13:37:48 +0800
+Processing by UsersController#register_confirm as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Es34Uq0uaHoP+CwxZMacsy391TE/lVbfA/jxPsuv3U0=", "user"=>{"username"=>"asdaasd", "email"=>"1132576362@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"注册"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM `users`  WHERE `users`.`username` = BINARY 'asdaasd' LIMIT 1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT  1 AS one FROM `users`  WHERE `users`.`email` = BINARY '1132576362@qq.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 81ms
+
+Errno::ENOENT (No such file or directory @ rb_sysopen - /Users/guoyoujin/Documents/rails/blogs/config/locales/unicorn.rb):
+  app/controllers/users_controller.rb:10:in `register_confirm'
+
+
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/guoyoujin/.rvm/gems/ruby-2.2.2/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.4ms)
