@@ -15,8 +15,9 @@ set :linked_files, %w{ config/database.yml }
 # Default value for linked_dirs is []
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/assets}
 # Default value for default_env is {}
+# rvm
 set :rvm_type, :user
-# set :rvm_ruby_version, '2.2.2'
+set :rvm_ruby_version, '2.2.2'
 set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 
 # Default value for keep_releases is 5
